@@ -6,6 +6,8 @@ async function main () {
     const myContractDeployed = await NFTFactory.deploy();
 
     await myContractDeployed.deployed();
+
+    console.log("deployed MyContract to: ", myContractDeployed.address);
 }
 
 main()
